@@ -44,8 +44,8 @@
 1. Клонируйте репозиторий:
 
 ```bash
-   git clone [https://github.com/arthurfilatov/Kanban-App.git](https://github.com/arthurfilatov/Kanban-App.git)
-   cd kanban-app
+   git clone https://github.com/arthurfilatov/Kanban-App.git
+   cd Kanban-App
 
 ```
 
