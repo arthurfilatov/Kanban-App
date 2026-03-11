@@ -41,11 +41,23 @@
 
 Это рекомендуемый способ запуска. Вам понадобится только установленный Docker Desktop.
 
-1. Клонируйте репозиторий.
+1. Клонируйте репозиторий:
+
+```bash
+   git clone [https://github.com/arthurfilatov/Kanban-App.git](https://github.com/arthurfilatov/Kanban-App.git)
+   cd kanban-app
+
+```
+
 2. В корне проекта выполните:
 
 ```bash
 docker-compose up --build
 
-
 ```
+
+3. Откройте приложение:
+
+Интерфейс (React): http://localhost:5173
+
+Документация API (Swagger): http://localhost:8000/docs
