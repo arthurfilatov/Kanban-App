@@ -1,0 +1,37 @@
+# --- System Files ---
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.docker/
+
+# --- Frontend ---
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+frontend/.env
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/pnpm-debug.log*
+
+# --- Backend ---
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.python-version
+backend/.venv/
+backend/venv/
+backend/env/
+backend/.env
+backend/*.log
+
+# --- Database ---
+backend/kanban_db.json
+
+# --- General Logs ---
+logs/
+*.log
