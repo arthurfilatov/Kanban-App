@@ -1,5 +1,6 @@
 import json
 import os
+import uuid
 from fastapi import FastAPI # type: ignore
 from fastapi.middleware.cors import CORSMiddleware # type: ignore
 from pydantic import BaseModel # type: ignore
@@ -33,9 +34,9 @@ DB_FILE = "tasks_db.json"
 def load_db():
     if not os.path.exists(DB_FILE):
         return [
-            {"id": "col-1", "title": "Надо сделать", "tasks": []},
-            {"id": "col-2", "title": "В работе", "tasks": []},
-            {"id": "col-3", "title": "Готово", "tasks": []},
+            {"id": "col-1", "title": "Надо сделать", "tasks": [{"id": str(uuid.uuid4()), "title": "Новая задача", "description": "Текст задачи", "priority": "high"}]},
+            {"id": "col-2", "title": "В работе", "tasks": [{"id": str(uuid.uuid4()), "title": "Проверить данные", "description": "Данные проверены", "priority": "medium"}]},
+            {"id": "col-3", "title": "Готово", "tasks": [{"id": str(uuid.uuid4()), "title": "Запустить проект", "description": "Проект запущен", "priority": "low"}]},
         ]
 
     try:
