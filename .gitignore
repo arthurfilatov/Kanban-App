@@ -30,7 +30,7 @@ backend/.env
 backend/*.log
 
 # --- Database ---
-backend/kanban_db.json
+backend/tasks_db.json
 
 # --- General Logs ---
 logs/
